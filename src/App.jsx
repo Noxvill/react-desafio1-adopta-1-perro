@@ -1,5 +1,6 @@
 
 import './App.css'
+import './components/MyCard/MyCard.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import MyCard from './components/MyCard/MyCard'
@@ -42,17 +43,17 @@ Btn:'Adoptar!'
 <>
 <main className='maincontainer'>
 <Header title='Adopta un perrito'/>
+<section className="sectionCard">
 {
 cardData.map((card) => (
 <MyCard
 cardImg={card.cardImg}
-title={card.Title}
+Title={card.Title}
 Text={card.Text}
 Btn={card.Btn}
-
 />
 ))}
-
+</section>
 <Footer year='2023'/>
 
 </main>
