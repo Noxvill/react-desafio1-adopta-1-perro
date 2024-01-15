@@ -15,8 +15,7 @@ cardImg:'https://hips.hearstapps.com/hmg-prod/images/gettyimages-695480884-64f84
 Title:'Benji',
 Text:'Perro amable y hogareño',
 Btn:'Adoptar!',
-Stylebtn:'success'
-
+Stylebtn:"danger"
 
 },
 {
@@ -24,7 +23,7 @@ Stylebtn:'success'
 Title:'Rafaela',
 Text:'Le encantan los niños, es una muy buena compañera',
 Btn:'Adoptar!',
-Stylebtn:'success'
+Stylebtn:"secondary"
 },
 
 {
@@ -32,7 +31,7 @@ Stylebtn:'success'
   Title:'Doggis',
 Text:'Le gusta mucho dormir y jugar con agua',
 Btn:'Adoptar!',
-Stylebtn:'success'
+Stylebtn:"info"
 },
 
 {
@@ -40,7 +39,7 @@ Stylebtn:'success'
   Title:'Starky & Hutch',
 Text:'2 hermanos inseparables, serán un complemento ideal para la familia',
 Btn:'Adoptar!',
-Stylebtn:'success'
+Stylebtn:"warning"
 }
 
 ]
@@ -58,7 +57,8 @@ cardData.map((card) => (
 cardImg={card.cardImg}
 Title={card.Title}
 Text={card.Text}
-/>
+Btn={card.Btn}
+Stylebtn={card.Stylebtn}/>
 
 ))} 
 

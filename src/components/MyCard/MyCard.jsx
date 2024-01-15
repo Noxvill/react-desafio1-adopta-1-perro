@@ -4,19 +4,19 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Tags from '../Tags/Tags';
 
-const MyCard = (props) => {
+const MyCard = ({cardImg, Title, Text, Btn, Stylebtn}) => {
 
 return(
     <>
 
 <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.cardImg} />
+      <Card.Img variant="top" src={cardImg} />
       <Card.Body>
-        <Card.Title>{props.Title}</Card.Title>
+        <Card.Title>{Title}</Card.Title>
         <Card.Text>
-          {props.Text}
+          {Text}
         </Card.Text>
-        <Tags/>
+        <Tags Stylebtn={Stylebtn} Btn={Btn}/>
       </Card.Body>
     </Card>
 

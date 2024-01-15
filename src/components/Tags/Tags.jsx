@@ -1,10 +1,10 @@
 import Button from 'react-bootstrap/Button';
-import App from '../../App';
+import MyCard from '../MyCard/MyCard';
 
-const Tags = (props) => {
+const Tags = ({Stylebtn, Btn}) => {
     return (
     <>
-    <Button variant="success">Adoptar!</Button>
+    <Button variant={Stylebtn}>{Btn}</Button>
     </>
     );
     };
