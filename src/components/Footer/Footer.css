@@ -1,0 +1,16 @@
+* { margin: 0;
+    padding: 0;
+     box-sizing:border-box}
+
+.My-Footer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-color: aqua;
+text-align: center;
+height: 15vh;
+width: 100vw;
+
+
+
+}
