@@ -58,7 +58,7 @@ cardData.map((card) => (
 cardImg={card.cardImg}
 Title={card.Title}
 Text={card.Text}
-Btn={card.Btn}/>
+/>
 
 ))} 
 
